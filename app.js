@@ -58,12 +58,25 @@ console.log(
 
 //lesson 3//
 
-const text = 'Zero of one'
-const part = 'E'
+const text = 'Mate academy'
+const part = 'mAte'
 
+
+// console.log(
+//      text.includes(part)
+// )
 
 console.log(
      text.toLocaleLowerCase().includes(part.toLocaleLowerCase())
 )
 
+console.log(
+     text.startsWith('ac'),
+     text.endsWith('emy')
+)
 
+console.log(
+     text.indexOf('a'),
+     text.indexOf('a', 2),
+     text.indexOf('a', 6),
+)
