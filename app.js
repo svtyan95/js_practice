@@ -80,3 +80,6 @@ console.log(
      text.indexOf('a', 2),
      text.indexOf('a', 6),
 )
+
+
+console.log
