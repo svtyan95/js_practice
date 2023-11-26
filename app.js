@@ -65,3 +65,5 @@ const part = 'E'
 console.log(
      text.toLocaleLowerCase().includes(part.toLocaleLowerCase())
 )
+
+
