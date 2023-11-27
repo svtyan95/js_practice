@@ -12,77 +12,118 @@
 
 
 //sting modification methods
-const title = '  Mate academy  '
-console.log(title, title.length)
+// const title = '  Mate academy  '
+// console.log(title, title.length)
 
-//upper,lower case
-//DOWN
-console.log(
-     title.toLowerCase()
-)
-//UP
-console.log(
-     title.toUpperCase()
-)
+// //upper,lower case
+// //DOWN
+// console.log(
+//      title.toLowerCase()
+// )
+// //UP
+// console.log(
+//      title.toUpperCase()
+// )
 
-//trim
-console.log(title)
-console.log(
-     title.trim(), //trimLeft(), trimRight()
-     title.trim().length
-)
+// //trim
+// console.log(title)
+// console.log(
+//      title.trim(), //trimLeft(), trimRight()
+//      title.trim().length
+// )
 
-// replace
-console.log(
-     title.replace('a', '+')
-)
+// // replace
+// console.log(
+//      title.replace('a', '+')
+// )
 
-console.log(
-     title.replaceAll('e', '_')
-)
+// console.log(
+//      title.replaceAll('e', '_')
+// )
 
 
 
-//how to find a substring
+// //how to find a substring
 
-const text = 'Mate academy';
-const part = 'mAte'
+// const text = 'Mate academy';
+// const part = 'mAte'
 
-console.log(
-     text.includes(part)
+// console.log(
+//      text.includes(part)
      
-);
+// );
 
-console.log(
-     text.toLowerCase().includes(part.toLowerCase())
-);
+// console.log(
+//      text.toLowerCase().includes(part.toLowerCase())
+// );
 
-console.log(
-     text.startsWith('Ma'),
-     text.endsWith('emy')
-)
+// console.log(
+//      text.startsWith('Ma'),
+//      text.endsWith('emy')
+// )
 
-console.log(
-     text.indexOf('a'),
-     text.indexOf('a', 2),
-     text.indexOf('a', 6)
+// console.log(
+//      text.indexOf('a'),
+//      text.indexOf('a', 2),
+//      text.indexOf('a', 6)
 
-)
-
-
-console.log(
-     text.lastIndexOf('a'),
-)
-
-//how to slice a part of a string 
+// )
 
 
+// console.log(
+//      text.lastIndexOf('a'),
+// )
+
+// //how to slice a part of a string 
+// console.log(
+//      text.slice(-5, -1),
+// )
+
+// console.log(
+//      text.slice(2, 8)
+// )
+
+
+
+
+//Iterate string and count characters
+
+// const title = 'Mate academy';
+// let count = 0;
+
+// // for (let i = 0; i < title.length; i++) { 
+// //      if (title[i] === 'a') {
+// //           count++;
+// //      }
+// // }
+
+// for (const ch of title) {
+//      if (ch === 'a') {
+//                     count++;
+
+//      }
+// }
+
+// console.log(count)
 
 
 
 
 
+// How to reverse a string
+const title = 'Mate academy';
+let reverse = '';
 
+for (let i = title.length - 1; i >= 0; i--) { 
+     reverse += title[i]
+}
+
+//цикл of 
+for (const ch of title) { 
+     reverse = ch + '-'+ reverse;
+}
+
+console.log(reverse)
 
 
 
@@ -177,4 +218,15 @@ console.log(
 //      text.indexOf('emy')
 // )
 
-// //
+
+
+const string = 'Do you have any hobbies?';
+let result = '';
+
+for (const char of string) {
+  if (char !== ' ') {
+    result += char;
+  } 
+}
+
+console.log(result);
