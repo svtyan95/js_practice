@@ -216,7 +216,7 @@ console.log(reverse)
 
 // console.log(
 //      text.indexOf('emy')
-// )
+// )xf
 
 
 
