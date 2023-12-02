@@ -27,7 +27,9 @@
 
 //+= itss the same as ++ this: myAge = myAge + 1;
 
+
+//LOOP
 for (let myAge = 0; myAge <= 10; myAge += 1) { 
      console.log(`I am ${myAge}`)
-
 }
+
