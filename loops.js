@@ -29,7 +29,18 @@
 
 
 //LOOP
-for (let myAge = 0; myAge <= 10; myAge += 1) { 
-     console.log(`I am ${myAge}`)
+// for (let myAge = 0; myAge <= 10; myAge += 1) { 
+//      console.log(`I am ${myAge}`)
+// }
+
+const n = 4;
+let sum = 0;
+
+
+for (let i = 1; i <= n; i = i + 1) { 
+     sum += i
+     console.log(i)
 }
+
+console.log(sum)
 
