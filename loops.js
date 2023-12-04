@@ -33,14 +33,14 @@
 //      console.log(`I am ${myAge}`)
 // }
 
-const n = 4;
-let sum = 0;
+// const n = 3;
+// let sum = 0;
 
 
-for (let i = 1; i <= n; i = i + 1) { 
-     sum += i
-     console.log(i)
-}
+// for (let i = 1; i <= n; i = i + 1) { 
+//      sum += i
+//      console.log(i)
+// }
 
-console.log(sum)
+// console.log(sum)
 

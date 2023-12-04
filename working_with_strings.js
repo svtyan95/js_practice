@@ -1,232 +1,100 @@
-// // get string character
-// const title = 'Mate academy'
-// console.log(title)
-// console.log(title.length)
-// console.log(title.length - 1)
-// console.log(title.length - 4)
+//get string character
 
-// //method add
-// console.log(title.at(-1))
-// console.log(title.charAt(20))
+// let title = 'Mate academy!'
 
-
-
-//sting modification methods
-// const title = '  Mate academy  '
-// console.log(title, title.length)
-
-// //upper,lower case
-// //DOWN
-// console.log(
-//      title.toLowerCase()
-// )
-// //UP
-// console.log(
-//      title.toUpperCase()
-// )
-
-// //trim
-// console.log(title)
-// console.log(
-//      title.trim(), //trimLeft(), trimRight()
-//      title.trim().length
-// )
-
-// // replace
-// console.log(
-//      title.replace('a', '+')
-// )
-
-// console.log(
-//      title.replaceAll('e', '_')
-// )
-
-
-
-// //how to find a substring
-
-// const text = 'Mate academy';
-// const part = 'mAte'
-
-// console.log(
-//      text.includes(part)
-     
-// );
-
-// console.log(
-//      text.toLowerCase().includes(part.toLowerCase())
-// );
-
-// console.log(
-//      text.startsWith('Ma'),
-//      text.endsWith('emy')
-// )
-
-// console.log(
-//      text.indexOf('a'),
-//      text.indexOf('a', 2),
-//      text.indexOf('a', 6)
-
-// )
-
-
-// console.log(
-//      text.lastIndexOf('a'),
-// )
-
-// //how to slice a part of a string 
-// console.log(
-//      text.slice(-5, -1),
-// )
-
-// console.log(
-//      text.slice(2, 8)
-// )
-
-
-
-
-//Iterate string and count characters
-
-// const title = 'Mate academy';
-// let count = 0;
-
-// // for (let i = 0; i < title.length; i++) { 
-// //      if (title[i] === 'a') {
-// //           count++;
-// //      }
-// // }
-
-// for (const ch of title) {
-//      if (ch === 'a') {
-//                     count++;
-
-//      }
-// }
-
-// console.log(count)
-
-
-
-
-
-// How to reverse a string
-const title = 'Mate academy';
-let reverse = '';
-
-for (let i = title.length - 1; i >= 0; i--) { 
-     reverse += title[i]
-}
-
-//цикл of 
-for (const ch of title) { 
-     reverse = ch + '-'+ reverse;
-}
-
-console.log(reverse)
-
-
-
-
-
-
-// // const n = 4;
-// // let sum = 0;
-
-
-// // for (let i = 1; i <= n; i++) { 
-// //      sum += i;
-// //      console.log(i)
-// // }
-
-// // console.log(sum)
-
-
-
-// // const m = 5;
-// // const n = 9;
-// // for (let i = m; i < n; i++) {
-// //   console.log(i);
-// // }
-
-
-// //lesson 1//
-// const title = '   A_polo Star   ';
-
-// console.log(title)
-
+// console.log(title);
 // console.log(title.length);
 
-// console.log(title[title.length - 1 * 6])
+// console.log(title[11]);
 
-// console.log(title.at(7))
+// console.log(title[title.length - 3])
 
-// console.log(title.charAt(6))
+// console.log(title.at(3))
 
-// //lesson 2//
+// console.log(title.charAt(4))
 
-// console.log(
-//      title.toUpperCase()
-// )
 
-// console.log(
-//      title.toLowerCase()
-// )
 
-// console.log(
-//      title.trim(),
-//      title.trim().length
-// )
+//String mofification methods
+// let title = '  Mate academy   '
+// console.log(title, title.length)
 
-// //replace
+// upper and lower case
+// console.log(title.toUpperCase())
+// console.log(title.toLocaleLowerCase())
 
-// console.log(
-//      title.replace('_', 'a')
-// )
 
-// console.log(
-//      title.replaceAll('o', '2')
-// )
+//method trim 
+// console.log(title.trim())
+// console.log(title.trim().length)
 
-// //lesson 3//
+// console.log(title.trimStart())
+// console.log(title.trimStart().length)
+
+// console.log(title.trimEnd())
+// console.log(title.trimEnd().length)
+
+// console.log(title, title.length)
+
+// //method replace
+// //how to replace symbol a with -
+// console.log(title.replace('a', '-'))
+
+// console.log(title.replaceAll('a', '#'))
+
+
+
+//how to find a substring
 
 // const text = 'Mate academy'
 // const part = 'mAte'
 
-
-// // console.log(
-// //      text.includes(part)
-// // )
+// console.log(
+//   text.toLowerCase().includes(part.toLocaleLowerCase())
+// );
 
 // console.log(
-//      text.toLocaleLowerCase().includes(part.toLocaleLowerCase())
-// )
+//   text.startsWith('ma'),
+//   text.endsWith('emy')
+// );
 
 // console.log(
-//      text.startsWith('ac'),
-//      text.endsWith('emy')
-// )
+//   text.indexOf('a', 1),
+//   text.indexOf('a', 2),
+//   text.indexOf('a', 6)
+
+// );
 
 // console.log(
-//      text.indexOf('a'),
-//      text.indexOf('a', 2),
-//      text.indexOf('a', 6),
-// )
+//   text.lastIndexOf('ac')
+// );
 
+
+//how to slice a part of a string
+// const text = 'Mate academy'
 
 // console.log(
-//      text.indexOf('emy')
-// )xf
+//   text.slice(-11, -1)
+// );
 
 
+//iteration string and count characters
+const title = 'Mate academy'
+let count = 0
 
-const string = 'Do you have any hobbies?';
-let result = '';
+// for (let i = 0; i < title.length; i++) { 
+//   if (title[i] === 'a') {
+//     count++;
+//   }
+// }
+// console.log(count)
 
-for (const char of string) {
-  if (char !== ' ') {
-    result += char;
-  } 
-}
+// method **for of**
 
-console.log(result);
+// for (const ch of title) { 
+//   if (ch === 'a') { 
+//     count++;
+//   }
+// }
+
+// console.log(count)
