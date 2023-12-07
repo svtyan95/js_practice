@@ -198,3 +198,24 @@
 // }
 
 // console.log(count)
+
+
+
+
+// how to reverse a string
+const title = "Mate academy";
+let reversed = '';
+
+// for (let i = title.length - 1; i >= 0; i--) { 
+//      reverse += title[i];
+// }
+
+// console.log(reverse)
+
+
+
+for (const ch of title) { 
+     reversed = ch + reversed;
+}
+
+console.log(reversed)
