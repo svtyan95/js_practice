@@ -253,3 +253,30 @@
 //      return Math.round(sum / numbers.length);
 
 // }
+
+
+// function getWordsLengths(words) {
+//   // створюємо порожній масив для результатів
+//   const result = [];
+  
+//   // перебираємо початковий масив
+//   for (const word of words) {
+//     // додаємо довжину слова до масиву результатів
+//     result.push(word.length);
+//   }
+  
+//   // повертаємо масив результатів
+//   return result;
+// }
+
+// // отримаємо [3, 3, 5, 4, 4]
+// getWordsLengths(['one', 'two', 'three', 'four', 'five']);
+
+
+const numbers = [];
+
+for (let i = 3; i <= 7; i++) {
+  numbers.push(i);
+}
+
+console.log("hello")
