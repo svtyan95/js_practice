@@ -272,11 +272,15 @@
 // // отримаємо [3, 3, 5, 4, 4]
 // getWordsLengths(['one', 'two', 'three', 'four', 'five']);
 
+let arr1 = [1, 2, 3, 4]
+let arr2 = [2, 3, 4, 5] 
 
-const numbers = [];
+let sum = 0;
 
-for (let i = 3; i <= 7; i++) {
-  numbers.push(i);
-}
 
-console.log("hello")
+  for (let i = 0; i < arr1.length; i++) {
+    sum += arr1[i] + arr2[i];
+  }
+
+
+console.log(sum)
